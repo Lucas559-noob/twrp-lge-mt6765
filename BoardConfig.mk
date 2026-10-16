@@ -39,7 +39,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SCREEN_DENSITY := 280
 
 # Kernel
-BOARD_BOOTIMG_HEADER_VERSION := 2
+BOARD_BOOTIMG_HEADER_VERSION := 1
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 androidboot.hardware=mmh55lm androidboot.usbconfigfs=true androidboot.product.lge.op_verity=1
 BOARD_KERNEL_PAGESIZE := 2048
