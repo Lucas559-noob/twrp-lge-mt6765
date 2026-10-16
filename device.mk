@@ -33,3 +33,11 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+
+# TWRP não usa update_engine; remove para evitar dependência de bootctrl.mt6765
+PRODUCT_PACKAGES := $(filter-out \
+    update_engine_sideload \
+    update_engine \
+    update_verifier \
+    otapreopt_script \
+    cppreopts.sh,$(PRODUCT_PACKAGES))
